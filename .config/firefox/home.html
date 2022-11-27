@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+    </style>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #666;
+            color: #eee;
+            font-family: 'Fira Mono', monospace;;
+        }
+        .main {
+            max-width: 700px;
+            margin: auto;
+        }
+        .welcome {
+            margin: 64px 0px 24px 0px;
+            display: flex;
+            justify-content: center;
+        }
+        .card-holder {
+            display: grid;
+            gap: 32px;
+            grid-template-columns:repeat(auto-fill, 196px);
+            justify-content: center;
+        }
+        .card {
+            height: 196px;
+            width: 196px;
+            background-color: #444;
+            box-shadow: 8px 8px black;
+            padding: 1em;
+            justify-content: center;
+        }
+        .card h3 {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+            text-decoration: underline;
+        }
+        .card ul {
+            margin: 0px 10px;
+            list-style: square;
+            line-height: 1.35em;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        a:hover {
+            color: #484;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="welcome">
+            <h1>Welcome back.</h1>
+        </div>
+        <div class="card-holder">
+            <div class="card">
+                <h3>📅Productivity</h3>
+                <ul>
+                    <a href="https://calendar.google.com/calendar/u/0/r"><li>Google Calendar</li></a>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>📺Media</h3>
+                <ul>
+                    <a href="https://z-lib.org/"><li>Z-Library</li></a>
+                    <a href="https://www.youtube.com/"><li>YouTube</li></a>
+                    <a href="https://open.spotify.com/"><li>Spotify</li></a>
+                    <a href="https://www.channelnewsasia.com/"><li>CNA News</li></a>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>💻Comp. Sci</h3>
+                <ul>
+                    <a href="https://github.com/"><li>GitHub</li></a>
+                    <a href="https://leetcode.com/"><li>LeetCode</li></a>
+                    <a href="https://www.hackerrank.com/"><li>HackerRank</li></a>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>🦁NUS</h3>
+                <ul>
+                    <a href="https://luminus.nus.edu.sg/"><li>LumiNUS</li></a>
+                    <a href="https://nusmods.com/"><li>NUSMods</li></a>
+                    <a href="https://myedurec.nus.edu.sg/"><li>EduRec</li></a>
+                    <a href="#"><li>Canvas</li></a>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>📥Mail</h3>
+                <ul>
+                    <a href="https://mail.google.com/mail/u/0/#inbox"><li>Gmail</li></a>
+                    <a href="https://mail.proton.me/u/0/inbox"><li>Proton</li></a>
+                    <a href="https://exchange.nus.edu.sg/"><li>NUS WebMail</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
